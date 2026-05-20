@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "wyy.py",
+      "src": "index.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "wyy.py"
+      "dest": "index.py"
     }
   ]
 }
