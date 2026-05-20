@@ -1,9 +1,1 @@
-fastapi
-uvicorn
-requests
-pytube
-moviepy
-numpy
-flask
-requests
-cryptography
+flask==2.3.3
