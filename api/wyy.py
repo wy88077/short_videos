@@ -1,17 +1,15 @@
+# 第一步：先导入 Flask
 from flask import Flask, request, render_template, redirect, jsonify, abort
-# 就在这里加这一行！
+# 第二步：创建 Flask 实例（必须紧跟导入）
 app = Flask(__name__)
 
+# 第三步：写根路由（必须在 app 实例之后）
+@app.route('/')
+def index():
+    return "✅ 部署成功！"
+
+# 第四步：再写其他导入和代码
 import argparse
-import json
-import os
-import urllib.parse
-from hashlib import md5
-from random import randrange
-import requests
-from cryptography.hazmat.primitives import padding
-from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modesimport argparse
-from flask import Flask, request, render_template, redirect, jsonify, abort
 import json
 import os
 import urllib.parse
