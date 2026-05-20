@@ -1,4 +1,16 @@
+from flask import Flask, request, render_template, redirect, jsonify, abort
+# 就在这里加这一行！
+app = Flask(__name__)
+
 import argparse
+import json
+import os
+import urllib.parse
+from hashlib import md5
+from random import randrange
+import requests
+from cryptography.hazmat.primitives import padding
+from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modesimport argparse
 from flask import Flask, request, render_template, redirect, jsonify, abort
 import json
 import os
